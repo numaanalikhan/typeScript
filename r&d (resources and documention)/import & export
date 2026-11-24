@@ -1,0 +1,35 @@
+freeCodeCamp: resource.
+
+Modules:
+JavaScript modules are a way to organize and structure code. They allow developers to break their code into smaller, reusable pieces. You can think about them as smaller pieces of code that you can import and export between different parts of an application.
+
+export:
+. default export can be only one in a single file
+. single export 
+. can also export multiple variables 
+. we can rename exports
+
+
+
+-----------------------------------------
+## ES Module Setup (Fixing `SyntaxError: Unexpected token 'export'`)
+
+By default, Node.js treats `.js` files as CommonJS, while TypeScript compiles using ES module syntax (`export`). 
+
+**Fix:**
+Add `"type": "module"` to your `package.json` file so Node.js recognizes ES modules:
+
+```json
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module"
+}
+```
+
+**Run the project:**
+```bash
+tsc
+node app.js
+```
