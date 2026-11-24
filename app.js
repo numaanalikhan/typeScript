@@ -22,10 +22,31 @@
 //     console.log(arrStr[i]);
 // question 7 
 // variation 1 
-let varAny = [1, "numaan", true];
-let varAny1 = 1;
-console.log(varAny1);
-varAny1 = "numaan";
-console.log(varAny1);
-varAny1 = true;
-console.log(varAny1);
+// let varAny:any[] = [1,"numaan", true];
+// let varAny1:any = 1;
+// console.log(varAny1);
+// varAny1 =  "numaan";
+// console.log(varAny1);
+// varAny1 = true;
+// console.log(varAny1);
+// question 8 unknown
+// let ukn:unknown;
+// ukn= [1,2,3,"numaan"];
+// for (let i:number=0 ; i <ukn.length; i++)
+//     console.log(ukn[i]);
+// got to know that ukn cant have methods like length like that
+// because it does not havae any data type.
+// question 9 
+let unino = "bozai numaan ali khan ";
+if (typeof unino === "string") {
+    console.log(unino.length);
+}
+// console.log(unino);
+// unino = 234;
+// console.log(unino);
+// unino = "numaan"
+// console.log(unino);
+// QUESTION 10
+// let arrAll:(string|number)[]= [1,"heena", 2 , "daniya", 3, "summaiya", 4, "sameeha"];
+// for (let i:number=0 ; i<arrAll.length; i++)
+//     console.log(arrAll[i]);
