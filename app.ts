@@ -16,15 +16,24 @@
 //     console.log(three_variables[i]);
     
 // question 5 
-// let arr:[] = [1,2,3,4,5,6];
-// the above should not be declared.
+// let arrNum:number[] = [1,2,3,4,5,6,6,3,43];
+// for (let i:number=0; i<arrNum.length; i++)
+//     console.log(arrNum[i]);
 
-// let arr:[string|number] = [1, "numaan"];
-// the above will not happen because
-// its not an array, but its a tuple beacuse in square bracket
+// question 6
+// let arrStr:string[] = ["arshad", "kaif", "ibrahim", "abrar", "ghouse"];
 
+// for(let i:number= 0; i<arrStr.length; i++)
+//     console.log(arrStr[i]);
+    
+// question 7 
+// variation 1 
+let varAny:any[] = [1,"numaan", true];
 
-let arr:(string|number)[] = ["numaan", "ali khan", 2, "bozai", 5];
-for (let i:number=0 ; i<arr.length; i++)
-    console.log(arr[i]);
+let varAny1:any = 1;
+console.log(varAny1);
+varAny1 =  "numaan";
+console.log(varAny1);
+varAny1 = true;
+console.log(varAny1);
 
