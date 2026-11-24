@@ -1,24 +1,22 @@
 "use strict";
-// before level 2 some questions
-// question1 
-// let arrBool:boolean[] = [true,false,true,true,false];
-// for (let i:number=0; i<arrBool.length; i++)
-//     console.log(arrBool[i]);
-// question 2
-// let tupPro:[string, number, boolean];
-// tupPro = ["realMe phone", 20000, true];
-// for(let i:number=0; i<=tupPro.length-1; i++)
-//     console.log(tupPro[i]);
+// question
+// let products:{id:number,name:string,price:number,inStock:boolean}[]=[
+//     {id:101, name:"iphone 6", price:20000,inStock:true},
+//     {id:102, name:"iphone 7", price:22500,inStock:false},
+//     {id:52, name:"jug", price:250,inStock:true},
+//     {id:234, name:"bottle", price:250,inStock:false},
+// ]
+// for (let i:number=0 ;i<products.length; i++){
+//     if(products[i].price >1000)
+//         console.log(products[i].price);
+// }
 // question 3
-// let varUkn:unknown;
-// varUkn=2
-// console.log(typeof varUkn );
-// question 4
-let varUni;
-let student = [
-    { id: 1, name: "heena", age: 19 },
-    { id: 2, name: "daniya", age: 20 },
-    { id: 3, name: "summaiya", age: 22 }
-];
-for (let i = 0; i < student.length; i++)
-    console.log(student[i].name);
+// function checkType (type:string | number | boolean):string{
+//     return typeof type
+// }
+// let varUnion:string | number | boolean = true;
+// console.log(checkType(varUnion));
+// question 5
+let arrNumbers = [2, 4, 5, 6, 8, 10];
+for (let arrNum of arrNumbers)
+    console.log(arrNum);
