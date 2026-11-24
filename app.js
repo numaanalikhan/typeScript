@@ -1,44 +1,26 @@
 "use strict";
-// aliases are used to create our own data type.
-// OBJECTS VS ALIASES VS INTERFACES
-// ALIASES 
-// PRIMITIVE TYPE ALIASES --> THEY ACCEPT SINGLE DATA TYPE.
-// import { vehicle ,Employees, Students} from "./data"
-// let ertiga:vehicle = {
-//     brand:"suzuki",
-//     model: 2024,
-//     price: 1200000
+// question 1
+// const greet = (name:string):string=>{
+//     return (`welcome ${name}`);
 // }
-// let indigo:vehicle = {
-//     brand: "tata",
-//     model: 2007,
-//     price: 350000
+// console.log(greet("numaan"));
+// question 2
+// const addNumbers = (a:number,b:number):number=>{
+//     return a+b;
 // }
-// let employee:Employees[] =[
-//     {id:101,isDeath:false,name:"numaan",salary:25000},
-//     {id:202,isDeath:false,name:"mohan",salary:12341243}
-// ]
-// for (let emp of employee){
-//     if(emp.salary>50000)
-//         console.log(emp);
+// console.log(addNumbers(2,5));
+// question 3 
+// function isEven(num:number):boolean{
+//     return num%2==0 ? true :false;
 // }
-// let heena:Students[]= [
-//     {id:1, name:"heena Begum", email:"heena@gmail.com",marks:25},
-//     {id:2, name:"daniya kaleem", email:"daniya@gmail.com", marks:30},
-//     {id:3, name:"summaiya farheen", email:"summaiya@gmail.com", marks:40}
-// ]
+// console.log(isEven(3));
 // question 4
-// let varUion:string | number;
-// function checkType(type:string | number):void{
-//     if(typeof type==="string") console.log(type.length);
-//     else if(typeof type==="number") console.log(type**2);    
+// const calculateArea = (len:number,brea:number):number{
+//     return len*brea;
 // }
-// varUion = 12
-// checkType(varUion)
-// question 5 
-let arrNumb = [1, 2, 3, 4, 5];
-let sum = 0;
-for (let num of arrNumb) {
-    sum = sum + num;
-}
-console.log(sum);
+// console.log(calculateArea(2,2));
+// question 5
+const checkAge = (age) => {
+    return age >= 18 ? "Eligible" : "Not-Eligible";
+};
+console.log(checkAge(23));
