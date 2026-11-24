@@ -16,5 +16,15 @@
 //     console.log(three_variables[i]);
     
 // question 5 
-let arr:[] = [1,2,3,4,5,6];
+// let arr:[] = [1,2,3,4,5,6];
 // the above should not be declared.
+
+// let arr:[string|number] = [1, "numaan"];
+// the above will not happen because
+// its not an array, but its a tuple beacuse in square bracket
+
+
+let arr:(string|number)[] = ["numaan", "ali khan", 2, "bozai", 5];
+for (let i:number=0 ; i<arr.length; i++)
+    console.log(arr[i]);
+
