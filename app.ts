@@ -16,5 +16,5 @@
 //     console.log(three_variables[i]);
     
 // question 5 
-// let arr:[] = [1,2,3,4,5,6];
-let arr:[number|]
+let arr:[] = [1,2,3,4,5,6];
+// the above should not be declared.
